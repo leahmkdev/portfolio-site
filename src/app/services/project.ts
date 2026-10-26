@@ -20,7 +20,7 @@ export class ProjectService {
     { id: 0,
       title: "LMK | Web Studio",
       description: "My personal portfolio featuring the very site you're browsing right now.",
-      img: "/images/lmk-web.webp",
+      img: "/images/lmk-web-2.webp",
       link: "https://github.com/leahhwd/portfolio-site"
     },
     { id: 1,
