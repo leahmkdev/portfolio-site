@@ -22,9 +22,7 @@ import { RouterLink } from '@angular/router';
 
           <div class="divider"></div>
           <!--reduce? -->
-          <p class="description">I create dynamic and responsive web applications that provide seamless user experiences.
-            With a strong foundation in both front-end and back-end technologies, I am passionate about
-             crafting efficient and scalable solutions.</p>
+          <p class="description">I build responsive web apps from front end to back end.</p>
 
           <div class="cta-buttons">
             <a routerLink="/projects" class="projects-link">VIEW MY WORK →</a>
@@ -36,7 +34,8 @@ import { RouterLink } from '@angular/router';
         <!-- Right side visual content -->
          <div class="hero-visual">
           <div class="laptop-image-wrap">
-            <img class="laptop-image" src="images/laptop-vector-2.png" alt="Laptop illustration" />
+            <img class="about-image" src="images/profile-img-mobile(1).png" alt="Profile Image"/>
+            <img class="about-image-desk" src="images/profile-img-desktop(3).png" alt="Profile Image"/>
           </div>
         </div>
         <!--Right side visual content end-->
@@ -141,6 +140,19 @@ import { RouterLink } from '@angular/router';
   color: #e6d3b3;
 }
 
+.about-image-desk {
+  display: none;
+}
+
+.about-image{
+  display: block;
+  width: 100%;
+  transform: scale(1.25);
+  height: auto;
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
 .description {
   margin-top: 30px;
   max-width: 500px;
@@ -151,8 +163,8 @@ import { RouterLink } from '@angular/router';
 }
 
 .divider {
-  width: 50px;
-  height: 3px;
+  width: 70px;
+  height: 1.5px;
   background-color: #d45c73;
   margin: 30px 0;
 }
@@ -305,15 +317,15 @@ import { RouterLink } from '@angular/router';
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: clamp(40px, 6vw, 88px);
+    gap: clamp(24px, 3vw, 56px);
     min-height: 0;
-    width: min(100%, 1320px);
+    width: min(100%, 1300px);
     margin: 0 auto;
   }
 
   .hero-content {
     flex: 1 1 0;
-    max-width: 560px;
+    max-width: 520px;
   }
 
   .header-name-bold {
@@ -327,22 +339,38 @@ import { RouterLink } from '@angular/router';
   }
 
   .hero-visual {
-    flex: 0 1 42%;
+    flex: 1.4 1 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    min-width: 280px;
+    min-width: 0;
+  }
+
+   .about-image-desk {
+    display: block;
+    width: 100%;
+    max-width: none;
+    transform: scale(1.15);
+    height: auto;
+      -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  }
+
+  .about-image {
+    display: none;
   }
 
   .laptop-image-wrap {
-    max-width: clamp(280px, 34vw, 500px);
-    margin-left: auto;
-    margin-right: 0;
+    width: 100%;
+    max-width: 760px;
+    padding: 0;
+    margin: 0;
   }
 
   .laptop-image {
     max-width: clamp(280px, 34vw, 500px);
   }
+
 
   .featured-info {
     flex-direction: row;

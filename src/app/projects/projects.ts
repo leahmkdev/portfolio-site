@@ -127,8 +127,8 @@ import { ProjectService, Project } from '../services/project'; // Alias to avoid
 }
 
 .divider {
-  width: 50px;
-  height: 2px;
+  width: 70px;
+  height: 1.5px;
   background-color: #d45c73;
   margin: 1rem 0;
 }

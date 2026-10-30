@@ -189,6 +189,7 @@ router-outlet + * {
   gap: .6rem;
   font-family: 'Fira Code', monospace;
   font-size: 1rem;
+  text-transform: uppercase;
   color: var(--soft);
   text-decoration: none;
   transition: color .2s;

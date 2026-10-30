@@ -18,24 +18,18 @@ import { TechCarouselComponent } from '../tech-carousel/tech-carousel.component'
             <div class="divider"></div>
 
             <p class="about-paragraph">
-              Hey 👋 my name is Leah, and I’m a full-stack developer
-              who loves turning ideas into functional applications. My journey into
-              development started with an internet obsession, a questionable amount
-              of screen time, and curiosity about how it all worked. Eventually,
-              this grew into a passion for the infinite possibilities.
+              Hey 👋 I'm Leah, a full-stack developer who loves turning ideas into
+              functional applications. I earned my B.S. in Full Stack Web Development
+              in 2025 🎓 and build mostly with Angular and Node.js. Day to day, I'm
+              pairing fresh ideas with stable code and sharpening the most important
+              dev skill: knowing exactly what to Google.
             </p>
-            <p class="about-paragraph-2">
-              I earned my Bachelor of Science in Full Stack Web Development in 2025 🎓
-              which gave me solid foundational experience building applications using technologies
-              like Angular and Node.js. Now, my days are spent evaluating new methods, combining
-              unique ideas with stable code, and practicing the most important Dev skill, knowing
-              exactly what to Google.
-            </p>
+
+
         </div>
 
-        <div class="image-wrapper">
-            <img class="about-image" src="images/profile-img-mobile(1).png" alt="Profile Image"/>
-            <img class="about-image-desk" src="images/profile-img-desktop(3).png" alt="Profile Image"/>
+        <div class="laptop-image-wrap">
+            <img class="laptop-image" src="images/laptop-vector-2.png" alt="Laptop illustration" />
         </div>
 
         <div class="cta">
@@ -121,8 +115,8 @@ h1 {
 }
 
 .divider {
-  width: 50px;
-  height: 3px;
+  width: 70px;
+  height: 1.5px;
   background-color: #d45c73;
   margin: 30px 0;
 }
@@ -135,25 +129,20 @@ p {
   font-family: 'Fira Code', sans-serif;
   color: #e6d3b3;
   line-height: 1.5;
-
 }
 
-.image-wrapper {
-  position: relative;
-  display: inline-block;
+.laptop-image-wrap {
+  max-width: 460px;
+  width: 100%;
+  padding: 20px;
 }
 
-.about-image{
+.laptop-image {
   display: block;
   width: 100%;
-  transform: scale(1.25);
+  max-width: 420px;
   height: auto;
-  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-}
-
-.about-image-desk {
-  display: none;
+  filter: drop-shadow(0 0 5px #d45c73);
 }
 
 .cta {
@@ -206,7 +195,7 @@ padding: 12px 15px;
   font-size: .75rem;
   text-transform: uppercase;
   font-weight: 400;
-   padding-top: 10%;
+   padding-top: 1.5rem;
 }
 
 .carousel {
@@ -257,23 +246,14 @@ padding: 12px 15px;
   font-size: .75rem;
 }
 
-.about-image {
-  display: none;
+.laptop-image-wrap {
+  grid-area: image;
+  justify-self: center;
 }
 
- .about-image-desk {
-    display: block;
-    grid-area: image;
-    grid-row: 1 / 2;
-    width: 100%;
-    max-width: 500px;
-    transform: none;
-    align-self: center;
-    height: auto;
-    justify-self: center;
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-  }
+.cta {
+  grid-area: cta;
+}
 
 
  .cta-buttons {
@@ -282,25 +262,11 @@ padding: 12px 15px;
 
   }
  .carousel-intro {
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
   }
 }
 
-@media (min-width: 1024px) {
-
-  .about-image {
-    display: none;
-  }
-
-  .about-image-desk {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-      -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-  }
-}
 
 @media(min-width: 1440px) {
   .about-text p {
